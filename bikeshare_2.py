@@ -10,9 +10,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def get_city():
-    """
-    Asks user to specify a city to analyze.
-
+    """Asks user to specify a city to analyze.
     Returns:
         (str) name of the city to analyze.
     """
@@ -32,9 +30,8 @@ def get_city():
             print('I apologize but I do not understand your response. Please input either '
                   'Chicago, New York, or Washington.')
 
-def get_time_filter():
+def timefilter():
     """Asks the user for a time period to analyze.
-    
     Returns:
         (str) Time filter to analyze.
     """
@@ -48,7 +45,6 @@ def get_time_filter():
 
 def get_month():
     """Asks the user for a month to analyze.
-    
     Returns:
         (tuple) Lower limit, upper limit of month to analyze.
     """
@@ -66,7 +62,6 @@ def get_month():
 
 def get_day():
     """Asks the user for a day to analyze.
-
     Returns:
         (tuple) Lower limit, upper limit of date to analyze.
     """
@@ -206,7 +201,7 @@ def gender_info(df):
     female_count = df.query('gender == "Female"').gender.count()
     print('There are {} male and {} female users.'.format(male_count, female_count))
 
-def birth_year_info(df):
+def by_info(df):
     """ Finds and prints the earliest, most recent and most popular birth years.
     Arguments:
         city dataframe
@@ -294,7 +289,7 @@ def main():
     df['trip'] = df['start_station'].str.cat(df['end_station'], sep=' to ')
 
     # Filter by time period (month, day, none)
-    time_filter = get_time_filter()
+    time_filter = timefilter()
     if time_filter == 'none':
         filtered_dataframe = df
     elif time_filter == 'month' or time_filter == 'day':
@@ -364,7 +359,7 @@ def main():
 
         # The earliest, most recent and most popular birth years
         start_time = time.time()
-        birth_year_info(filtered_dataframe)
+        by_info(filtered_dataframe)
         print("That took %s seconds." % (time.time() - start_time))
 
     # Display five lines of data at a time if the user responds that they would like to
