@@ -30,7 +30,7 @@ def get_city():
             print('I apologize but I do not understand your response. Please input either '
                   'Chicago, New York, or Washington.')
 
-def get_time_filter():
+def timefilter():
     """Asks the user for a time period to analyze.
     Returns:
         (str) Time filter to analyze.
@@ -289,7 +289,7 @@ def main():
     df['trip'] = df['start_station'].str.cat(df['end_station'], sep=' to ')
 
     # Filter by time period (month, day, none)
-    time_filter = get_time_filter()
+    time_filter = timefilter()
     if time_filter == 'none':
         filtered_dataframe = df
     elif time_filter == 'month' or time_filter == 'day':
