@@ -7,3 +7,10 @@ to import the data and answer interesting questions about it by computing descri
 statistics. A script was also written that takes in raw input to create an interactive 
 experience in the terminal to present these statistics.
 
+### **Software Requirements**
+To complete this project, the following software requirements apply:
+
+* Python 3, NumPy, and pandas installed using Anaconda
+* A text editor, like Sublime or Atom.
+* A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
+
