@@ -201,7 +201,7 @@ def gender_info(df):
     female_count = df.query('gender == "Female"').gender.count()
     print('There are {} male and {} female users.'.format(male_count, female_count))
 
-def birth_year_info(df):
+def by_info(df):
     """ Finds and prints the earliest, most recent and most popular birth years.
     Arguments:
         city dataframe
@@ -359,7 +359,7 @@ def main():
 
         # The earliest, most recent and most popular birth years
         start_time = time.time()
-        birth_year_info(filtered_dataframe)
+        by_info(filtered_dataframe)
         print("That took %s seconds." % (time.time() - start_time))
 
     # Display five lines of data at a time if the user responds that they would like to
