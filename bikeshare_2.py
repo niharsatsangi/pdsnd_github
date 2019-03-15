@@ -10,9 +10,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def get_city():
-    """
-    Asks user to specify a city to analyze.
-
+    """Asks user to specify a city to analyze.
     Returns:
         (str) name of the city to analyze.
     """
@@ -34,7 +32,6 @@ def get_city():
 
 def get_time_filter():
     """Asks the user for a time period to analyze.
-    
     Returns:
         (str) Time filter to analyze.
     """
@@ -48,7 +45,6 @@ def get_time_filter():
 
 def get_month():
     """Asks the user for a month to analyze.
-    
     Returns:
         (tuple) Lower limit, upper limit of month to analyze.
     """
@@ -66,7 +62,6 @@ def get_month():
 
 def get_day():
     """Asks the user for a day to analyze.
-
     Returns:
         (tuple) Lower limit, upper limit of date to analyze.
     """
