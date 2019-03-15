@@ -55,3 +55,14 @@ In this project, you'll write code to provide the following information:
 	* counts of each user type
 	* counts of each gender (only available for NYC and Chicago)
 	* earliest, most recent, most common year of birth (only available for NYC and Chicago)
+
+### **The Files**
+To help guide the work in this project, a template with helper code and comments is provided in a bikeshare_2.py 
+file, and the scripting will be done in there also. The following three city dataset files will be needed too:
+
+* chicago.csv
+* new_york_city.csv
+* washington.csv
+
+Some versions of this project also include a Project Workspace page in the classroom where the bikeshare.py 
+file and the city dataset files are all included, and the work can be done with them there.
