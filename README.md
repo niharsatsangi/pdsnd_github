@@ -1,4 +1,4 @@
-#### **Explore U.S. Bikeshare Data**
+## **Explore U.S. Bikeshare Data**
 
 ### **Overview**
 In this project, Python was used to explore data related to bike share systems for three 
